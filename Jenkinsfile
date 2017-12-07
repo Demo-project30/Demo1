@@ -4,17 +4,17 @@ pipeline {
     stages {
         stage('Build') { 
             steps { 
-                echo " This is Build Stage"
+                sh 'echo "I am your 1st Child"'
             }
         }
         stage('Test'){
             steps {
-                echo "This is a Test Stage" 
+               sh 'echo "you are my master"' 
             }
         }
         stage('Deploy') {
             steps {
-                echo "This is a Deploy Stage"
+               sh 'echo "assign me tasks"'
             }
         }
     }
